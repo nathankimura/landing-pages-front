@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "jest",
     "test-dev": "jest --watch",
+    "coverage": "npm test -- --watchAll=false --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
