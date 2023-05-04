@@ -1,11 +1,11 @@
 import { GridImage } from '.'
 
+import mock from './mock';
+
 export default {
   title: 'GridImage',
   component: GridImage,
-  args: {
-    children: 'GridImage',
-  },
+  args: mock,
   argTypes: {
     children: { type: 'string' },
   },
