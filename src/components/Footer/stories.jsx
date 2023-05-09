@@ -4,7 +4,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    html: `<p><a href="https://github.com/nathankimura">Feito com ❤ por Nathan Kimura</a></p>`,
+    footerHtml: `<p><a href="https://github.com/nathankimura">Feito com ❤ por Nathan Kimura</a></p>`,
   },
   argTypes: {
     children: { type: 'string' },
