@@ -8,12 +8,12 @@ export const Container = styled.footer`
   text-align: center;
   border-top: 0.1rem solid ${theme.colors.mediumGray};
   a {
-    color: inherit;
+    color: ${theme.colors.secondaryColor};
     text-decoration: none;
-    font-size: ${theme.font.sizes.small};
   };
   & ${TextComponent} {
     font-size: ${theme.font.sizes.small};
+    padding: ${theme.spacings.small} 0;
   };
   & ${SectionContainer} {
     padding-top: 0;
