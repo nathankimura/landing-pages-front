@@ -6,9 +6,9 @@ import { TextComponent } from '../TextComponent';
 
 import mock from './mock'
 
-export const GridText = ({ title, description, grid, background = false }) => {
+export const GridText = ({ title, description, grid, background = false, sectionId = '' }) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
         <Heading colorDark={!background} size='huge' uppercase as='h2'>
           {title}
@@ -41,4 +41,5 @@ GridText.propTypes = {
     description: P.string.isRequired,
   })).isRequired,
   background: P.bool,
+  sectionId: P.string,
 }
