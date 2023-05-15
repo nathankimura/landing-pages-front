@@ -29,7 +29,7 @@ function Home() {
     const load = async () => {
       try {
         const data = await fetch(
-          `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`
+          `https://strapi-landing-pages-kaz6.onrender.com/api/pages/?filters[slug]=${slug}&populate=deep`
         );
         const json = await data.json();
         const { attributes } = json.data[0];
